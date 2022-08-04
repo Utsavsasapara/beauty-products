@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.header {
+ width: 100%;
+ display: flex;
+ background-color: rgb(241 241 241);
+}
+.logo {
+    width: 20%;
+    padding: 16px;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+.menu {
+    width: 80%;
+}
+.menu ul{
+    float: right;
+}
+.menu ul li{
+   list-style-type: none;
+   display: inline-block;
+   padding: 20px 20px 20px 0;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+ }
+
+
+ .banner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(241 241 241);
+ }
+ .banner-img {
+    flex: 1;
+    text-align: center;
+ }
+ .banner-text {
+   flex: 1;
+   padding-top: 70px;
+ }
+ .banner-text p, .banner-text h2{
+    padding-bottom: 20px;
+ }
+ .banner-btn-1 {
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+ }
+ .banner-btn-1:hover {
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+ }
+ .banner-btn-1 a {
+    text-decoration: none;
+    color: black;
+ }
+ .banner-btn-1:hover a {
+    color: whitesmoke;
+ }
+ .banner-btn-2 {
+   background-color: transparent;
+   border: 0;
+   padding: 10px 20px;
+ }
+ .banner-btn-2 a{
+   text-decoration: none;
+   color: black;
+   border-bottom: 2px solid yellowgreen;
+ }
+
+
+ .recent-text{
+   text-align: center;
+   margin-top: 40px;
+ }
+ .recent-text h1{
+   margin-bottom: 30px;
+   display: inline-block;
+   border-bottom: 2px solid yellowgreen;
+   padding-bottom: 5px;
+ }
+ 
+
+
+ .box-container {
+   display: flex;
+   width: 100%;
+   text-align: center;
+   flex-wrap: wrap;
+   padding: 0 20px;
+ }
+ .box {
+   flex: 1;
+   margin: 20px;
+ }
+ .in-box-1{
+    width: 100%;
+    height: 230px;
+ }
+ .in-box-1 img {
+   width: 200px;
+ }
+ .in-box-2 {
+   text-align: left;
+   padding-top: 15px;
+ }
+ .price-color {
+   color:yellowgreen;
+ }
+
+ .bg-pink {
+   background-color:#f9afc7;
+ }
+ .bg-blue {
+   background-color: #92d7f1;
+ }
+ .bg-purple {
+   background-color: #b1a9f3;
+ }
+ .bg-cream {
+   background-color: #ffdcb0;
+ }
+
+
+
+ .ad-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  color: rgb(65, 65, 63);
+ }
+ .ad-box1 {
+  flex: 1;
+  margin: 20px;
+  height: 400px;
+  background-image: url(/images/shopping-girl-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+ }
+ .ad-box2 {
+  width: 100%;
+  flex: 1;
+  padding: 20px;
+ }
+ .ad-box-1 {
+  width: 100%;
+  background-image: url('/images/shopping-girl.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 190px;
+  margin-bottom: 20px;
+ }
+ .ad-box-2 {
+  width: 100%;
+  background-image: url('/images/shopping-girl-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 190px;
+ }
+
+ .ad-box1 h2 {
+  margin-top: 200px;
+  margin-left: 70px;
+  color: rgb(31 231 185 / 85%);
+ }
+
+ .ad-box-1 h2 {
+  padding-top: 30px;
+  padding-left: 10px;
+ }
+ .ad-box-2 h2 {
+  padding-top: 30px;
+  padding-left: 10px;
+  color: aliceblue;
+ }
+
+
+
+
+ @media (max-width:800px) {
+  .banner-text {
+    flex: 1;
+    padding-top: 70px;
+    padding: 40px;
+ }
+ .banner-text p {
+  text-align: justify;
+ }
+ .banner-img img {
+  width: 300px;
+ }
+}
+
+@media (max-width:768px) {
+  .menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 8px 8px 0;
+ }
+
+  .banner {
+  flex-direction: column;
+ }
+ .ad-container{
+  flex-direction: column;
+ }
+ .ad-box1 h2 {
+  margin-left: 50px;
+  padding-bottom: 100px;
+  color: rgb(31 231 185 / 85%);
+}
+}
+
+@media (max-width:500px) {
+.header {
+  flex-direction: column;
+}
+.logo {
+  width: 100%;
+  padding: 16px;
+}
+.menu {
+    width: 100%;
+}
+.menu ul {
+  float: none;
+  text-align: center;
+}
+.menu ul li{
+  list-style-type: none;
+  display: block;
+  padding: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+ }
+}
