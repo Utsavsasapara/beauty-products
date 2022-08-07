@@ -196,6 +196,40 @@
 
 
 
+ .mail-container {
+  text-align: center;
+  margin-top: 25px;
+ }
+ .mail-container h1{
+  margin-bottom: 30px;
+  display: inline-block;
+  border-bottom: 2px solid yellowgreen;
+  padding-bottom: 5px;
+}
+.mail-container p {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.mail-container input.email-bt {
+  padding: 10px 25px;
+  margin-bottom: 30px;
+}
+.mail-container input.email-bt:hover {
+background-color: black;
+color: whitesmoke;
+}
+.mail-container div.social-icon ul{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.mail-container div.social-icon ul li{
+ display: inline-block;
+}
+.mail-container div.social-icon ul li a img{
+ width: 50px;
+ }
+
 
  @media (max-width:800px) {
   .banner-text {
